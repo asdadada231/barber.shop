@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Barber.Shop</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+  <nav class="menu">
+    <a href="#">Inicio</a>
+    <a href="#">Servicios</a>
+    <a href="#">Contacto</a>
+  </nav>
+
+  <section class="hero">
+    <h1>Barber.Shop</h1>
+    <p>La mejor calidad en servicios de barbería</p>
+    <button class="boton-agendar">Agendar hora</button>
+  </section>
+
+  <section class="servicios">
+    <div class="tarjeta">
+      <h3>El estilo que quieras</h3>
+      <p>Corrección de estilo y afeitado de calidad.</p>
+    </div>
+    <div class="tarjeta">
+      <h3>Agenda nuestras horas para evitar inconvenientes</h3>
+      <p>Reserva tu cita con anticipación y evita esperas.</p>
+    </div>
+    <div class="tarjeta">
+      <h3>Sobre nuestros servicios</h3>
+      <p>Descubre más sobre los servicios que ofrecemos y cómo podemos ayudarte a lucir tu mejor versión.</p>
+    </div>
+  </section>
+
+  <section class="contacto">
+    <h2>Contáctanos</h2>
+    <form class="formulario" action="https://formspree.io/f/mzebykzo" method="POST">
+      <input type="text" name="nombre" placeholder="Tu nombre" required>
+      <input type="email" name="email" placeholder="Tu correo" required>
+      <textarea name="mensaje" placeholder="Tu mensaje" rows="4" required></textarea>
+      <button type="submit">Enviar mensaje</button>
+    </form>
+  </section>
+
+  <footer class="footer">
+    <p>© 2026 Barber.Shop — Contacto: 555-1234</p>
+  </footer>
+
+  <script>
+    const boton = document.querySelector('.boton-agendar');
+
+    boton.addEventListener('click', function() {
+      alert('¡Gracias por tu interés! Te contactaremos pronto.');
+    });
+  </script>
+
+</body>
+</html>
