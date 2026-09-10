@@ -1,0 +1,352 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background-color: #0c0c0e;
+  color: #e4e4e7;
+  line-height: 1.6;
+}
+
+/* Header Minimalista */
+.header-principal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 5%;
+  background-color: #121216;
+  border-bottom: 1px solid #222228;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo-img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #c5a059;
+}
+
+.menu {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.menu a {
+  color: #a1a1aa;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  transition: color 0.2s;
+}
+
+.menu a:hover {
+  color: #ffffff;
+}
+
+.link-contacto {
+  color: #0c0c0e !important;
+  background-color: #c5a059;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-weight: 600 !important;
+}
+
+.link-contacto:hover {
+  background-color: #b38f4a !important;
+}
+
+/* Hero Section */
+.hero {
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 20px;
+  background: linear-gradient(rgba(12,12,14,0.7), rgba(12,12,14,0.9)), url('interior.jpg') no-repeat center center/cover;
+}
+
+.subtitulo-hero {
+  font-size: 12px;
+  letter-spacing: 3px;
+  color: #c5a059;
+  font-weight: 700;
+  margin-bottom: 15px;
+  display: block;
+}
+
+.hero h1 {
+  font-size: 42px;
+  font-weight: 800;
+  color: #ffffff;
+  margin-bottom: 15px;
+  letter-spacing: -0.5px;
+}
+
+.hero p {
+  color: #a1a1aa;
+  font-size: 16px;
+  max-width: 550px;
+  margin: 0 auto 30px auto;
+}
+
+/* Secciones Generales */
+.seccion {
+  padding: 80px 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.seccion-oscura {
+  background-color: #121216;
+  max-width: 100%;
+  padding: 80px 5%;
+}
+
+.seccion-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.seccion-header h2 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: -0.5px;
+  margin-bottom: 8px;
+}
+
+.seccion-header p {
+  color: #71717a;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Tarjetas Minimalistas */
+.grid-tarjetas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.tarjeta {
+  background-color: #16161a;
+  border: 1px solid #222228;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.2s, border-color 0.2s;
+}
+
+.tarjeta:hover {
+  transform: translateY(-4px);
+  border-color: #c5a059;
+}
+
+.tarjeta img {
+  width: 100% !important;
+  height: 180px !important;
+  object-fit: cover !important;
+}
+
+.tarjeta-body {
+  padding: 20px;
+}
+
+.tarjeta h3 {
+  font-size: 18px;
+  color: #ffffff;
+  margin-bottom: 8px;
+}
+
+.tarjeta p {
+  font-size: 14px;
+  color: #a1a1aa;
+}
+
+/* Tabla de Precios Elegante */
+.tabla-precios {
+  max-width: 650px;
+  margin: 0 auto;
+  background: #16161a;
+  border: 1px solid #222228;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.item-precio {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 25px;
+  border-bottom: 1px solid #222228;
+  font-size: 15px;
+}
+
+.item-precio:last-child {
+  border-bottom: none;
+}
+
+.precio {
+  font-weight: 600;
+  color: #c5a059;
+}
+
+/* Opiniones Minimalistas */
+.grid-opiniones {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.testimonio {
+  background: #16161a;
+  border: 1px solid #222228;
+  padding: 25px;
+  border-radius: 8px;
+}
+
+.testimonio p {
+  font-size: 14px;
+  font-style: italic;
+  color: #d4d4d8;
+  margin-bottom: 15px;
+}
+
+.testimonio span {
+  font-size: 13px;
+  font-weight: 600;
+  color: #c5a059;
+}
+
+/* Ubicación */
+.info-ubicacion {
+  text-align: center;
+  background: #16161a;
+  border: 1px solid #222228;
+  padding: 30px;
+  border-radius: 8px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.info-ubicacion p {
+  font-size: 16px;
+  color: #d4d4d8;
+  margin: 8px 0;
+}
+
+/* Formulario */
+.formulario {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.formulario input,
+.formulario textarea {
+  padding: 14px;
+  background-color: #16161a;
+  border: 1px solid #222228;
+  border-radius: 6px;
+  color: white;
+  font-size: 14px;
+  font-family: inherit;
+}
+
+.formulario input:focus,
+.formulario textarea:focus {
+  outline: none;
+  border-color: #c5a059;
+}
+
+.formulario button {
+  background-color: #c5a059;
+  color: #0c0c0e;
+  border: none;
+  padding: 14px;
+  border-radius: 6px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.formulario button:hover {
+  background-color: #b38f4a;
+}
+
+/* Botones y WhatsApp */
+.boton-agendar {
+  display: inline-block;
+  background-color: #c5a059;
+  color: #0c0c0e;
+  text-decoration: none;
+  padding: 12px 28px;
+  border-radius: 6px;
+  font-size: 15px;
+  font-weight: 600;
+  transition: background-color 0.2s;
+}
+
+.boton-agendar:hover {
+  background-color: #b38f4a;
+}
+
+.whatsapp-flotante {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  background-color: #25d366;
+  color: white;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+  z-index: 1000;
+  text-decoration: none;
+  transition: transform 0.2s;
+}
+
+.whatsapp-flotante:hover {
+  transform: scale(1.08);
+}
+
+.footer {
+  text-align: center;
+  padding: 30px;
+  background-color: #08080a;
+  color: #71717a;
+  font-size: 13px;
+  border-top: 1px solid #222228;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .header-principal {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .menu {
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .hero h1 {
+    font-size: 32px;
+  }
+}
