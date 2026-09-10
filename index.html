@@ -4,59 +4,112 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Barber.Shop - Barbería en Santiago | Cortes y afeitado</title>
-  <meta name="description" content="Barbería profesional en Santiago con cortes modernos, afeitado clásico y atención personalizada. Agenda tu hora hoy mismo.">
-  <link rel="stylesheet" href="estilos.css?v=2">
-  <meta name="google-site-verification" content="BxOwGEnrvCdQ43W5JkUoKWnVAIjOjOWCn5U_gyHNopg" />
+  <meta name="description" content="Barbería profesional en Santiago con cortes modernos, afeitado clásico y atención personalizada. Agenda tu hora hoy mismo por WhatsApp.">
+  <link rel="stylesheet" href="estilos.css?v=3"> 
 </head>
 <body>
 
-  <!-- Logo principal de la barbería -->
+  <!-- Logo principal -->
   <div class="contenedor-logo">
     <img src="logo.jpg" alt="Logo de la barbería" class="logo-img">
   </div>
 
   <nav class="menu">
     <a href="#">Inicio</a>
-    <a href="#">Servicios</a>
-    <a href="#">Contacto</a>
+    <a href="#servicios">Servicios</a>
+    <a href="#precios">Precios</a>
+    <a href="#ubicacion">Ubicación</a>
+    <a href="#contacto">Contacto</a>
   </nav>
 
-  <section class="hero">
+  <header class="hero">
     <h1>Barber.Shop</h1>
     <p>Barbería en Santiago con cortes modernos, afeitado clásico y atención personalizada</p>
-    <button class="boton-agendar">Agendar hora</button>
-  </section>
+    <a href="https://wa.me/56912345678?text=Hola,%20quiero%20reservar%20una%20hora%20para%20corte%20y%20barba" class="boton-agendar" target="_blank">Agendar por WhatsApp</a>
+  </header>
 
-  <section class="servicios">
+  <!-- Sección de Servicios -->
+  <section id="servicios" class="servicios">
     <div class="tarjeta">
       <img src="corte1.jpg" alt="Corte moderno">
       <h3>El estilo que quieras</h3>
-      <p>Corrección de estilo y afeitado de calidad.</p>
+      <p>Corrección de estilo y asesoría personalizada de imagen.</p>
     </div>
     <div class="tarjeta">
       <img src="barba.jpg" alt="Afeitado y barba">
-      <h3>Agenda nuestras horas para evitar inconvenientes</h3>
-      <p>Reserva tu cita con anticipación y evita esperas.</p>
+      <h3>Afeitado Clásico</h3>
+      <p>Perfilado de barba con toallas calientes y navaja profesional.</p>
     </div>
     <div class="tarjeta">
       <img src="interior.jpg" alt="Interior de la barbería">
-      <h3>Sobre nuestros servicios</h3>
-      <p>Descubre más sobre los servicios que ofrecemos y cómo podemos ayudarte a lucir tu mejor versión.</p>
+      <h3>Ambiente Único</h3>
+      <p>Disfruta de la mejor atención en un espacio cómodo y moderno.</p>
     </div>
   </section>
 
-  <section class="contacto">
+  <!-- Sección de Precios -->
+  <section id="precios" class="seccion-precios">
+    <h2>Nuestros Precios</h2>
+    <div class="tabla-precios">
+      <div class="item-precio">
+        <span>Corte de Cabello Clásico / Moderno</span>
+        <span class="precio">$12.000</span>
+      </div>
+      <div class="item-precio">
+        <span>Perfilado y Afeitado de Barba</span>
+        <span class="precio">$9.000</span>
+      </div>
+      <div class="item-precio">
+        <span>Combo Completo (Corte + Barba)</span>
+        <span class="precio">$18.000</span>
+      </div>
+      <div class="item-precio">
+        <span>Corte Infantil</span>
+        <span class="precio">$10.000</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección de Opiniones -->
+  <section class="opiniones">
+    <h2>Lo que dicen nuestros clientes</h2>
+    <div class="grid-opiniones">
+      <div class="testimonio">
+        <p>"Excelente atención y muy buen ambiente. El corte quedó impecable, totalmente recomendado."</p>
+        <span>- Matías R.</span>
+      </div>
+      <div class="testimonio">
+        <p>"El servicio de barba con toalla caliente es una experiencia excelente. Vuelvo sí o sí."</p>
+        <span>- Ignacio V.</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección de Ubicación y Horarios -->
+  <section id="ubicacion" class="ubicacion">
+    <h2>¿Dónde estamos?</h2>
+    <p><strong>Dirección:</strong> Av. Providencia 1234, Santiago</p>
+    <p><strong>Horarios de atención:</strong> Lunes a Sábado de 10:00 a 20:00 hrs.</p>
+  </section>
+
+  <!-- Sección de Contacto -->
+  <section id="contacto" class="contacto">
     <h2>Contáctanos</h2>
     <form class="formulario" action="https://formspree.io/f/mzebykzo" method="POST">
       <input type="text" name="nombre" placeholder="Tu nombre" required>
       <input type="email" name="email" placeholder="Tu correo" required>
-      <textarea name="mensaje" placeholder="Tu mensaje" rows="4" required></textarea>
+      <textarea name="mensaje" placeholder="Tu mensaje o consulta" rows="4" required></textarea>
       <button type="submit">Enviar mensaje</button>
     </form>
   </section>
 
+  <!-- Botón Flotante de WhatsApp -->
+  <a href="https://wa.me/56912345678?text=Hola,%20quisiera%20hacer%20una%20consulta" class="whatsapp-flotante" target="_blank" title="Escríbenos por WhatsApp">
+    💬
+  </a>
+
   <footer class="footer">
-    <p>© 2026 Barber.Shop — Contacto: 555-1234</p>
+    <p>© 2026 Barber.Shop — Contacto: +56 9 1234 5678</p>
   </footer>
 
 </body>
